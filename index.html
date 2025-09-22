@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pamela’s Kitchen</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">Pamela’s Kitchen</div>
+      <div id="menu-toggle">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#recipes">Recipes</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-content fade-in">
+      <h1>Welcome to Pamela’s Kitchen</h1>
+      <p>Delicious homemade recipes crafted with love and tradition.</p>
+      <button class="btn" id="exploreBtn">Explore Recipes</button>
+    </div>
+  </section>
+
+  <!-- Recipes -->
+  <section id="recipes" class="recipes fade-in">
+    <div class="container">
+      <h2>Featured Recipes</h2>
+      <div class="recipe-grid">
+        <div class="recipe-card slide-left">
+          <img src="images/chapati.jpg" alt="Chapati"/>
+          <h3>Chapati</h3>
+          <p>Soft and golden flatbreads, a family favorite.</p>
+        </div>
+        <div class="recipe-card fade-in">
+          <img src="images/chicken_stew.jpg" alt="Chicken Stew"/>
+          <h3>Chicken Stew</h3>
+          <p>Rich, hearty stew with tender chicken and spices.</p>
+        </div>
+        <div class="recipe-card slide-right">
+          <img src="images/mandazi.jpg" alt="Mandazi"/>
+          <h3>Mandazi</h3>
+          <p>Sweet and fluffy East African doughnuts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about fade-in">
+    <div class="container about-container">
+      <div class="about-image">
+        <img src="images/pamela.jpg" alt="Pamela - Chef and Recipe Creator"/>
+      </div>
+      <div class="about-text">
+        <h2>About Pamela</h2>
+        <p>
+          Pamela’s passion for cooking has been passed down through generations. 
+          Every dish she makes combines tradition, creativity, and love — bringing families and friends together around the table.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="testimonials fade-in">
+    <div class="container">
+      <h2>What People Say</h2>
+      <div class="testimonial-wrapper">
+        <div class="testimonial-track" id="testimonial-track">
+          <div class="testimonial">
+            <blockquote>
+              “Pamela’s chapatis are the softest I’ve ever had. Absolutely perfect!”  
+              <cite>- Jane, Family Friend</cite>
+            </blockquote>
+          </div>
+          <div class="testimonial">
+            <blockquote>
+              “Her chicken stew is pure comfort food — rich, hearty, and full of flavor.”  
+              <cite>- John, Neighbor</cite>
+            </blockquote>
+          </div>
+          <div class="testimonial">
+            <blockquote>
+              “The mandazis are melt-in-your-mouth delicious. A true treat!”  
+              <cite>- Sarah, Customer</cite>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact fade-in">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required/>
+        <input type="email" id="email" placeholder="Your Email" required/>
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <div id="formError" class="error-message"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Pamela’s Kitchen. All rights reserved. Built with ❤️ by Lorraine.</p>
+  </footer>  
+
+  <script defer src="js/script.js"></script>
+</body>
+</html>
